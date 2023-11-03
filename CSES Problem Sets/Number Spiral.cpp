@@ -19,12 +19,12 @@ int main()
             if(row%2 == 0){
                 cout<< row*row - (column - 1)<<endl;
             }
-            else cout<< (row-1)*(row -1 ) +1+ (column - 1)<<endl;
+            else cout<< (row-1)*(row -1 ) + column <<endl;
         }else{
                if(column%2 != 0){
                 cout<< column*column - (row - 1)<<endl;
             }
-            else cout<< (column-1)*(column -1 ) +1+ (row - 1)<<endl;
+            else cout<< (column-1)*(column -1 ) + row <<endl;
         }
 
     }
