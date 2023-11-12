@@ -17,7 +17,6 @@ int main()
    }
    int p_check = 0;
    vector<string>even_len,odd_len;
-
    for (int i=0;i<count.size();i++) {
       if(count[i] % 2 != 0){
         p_check++;
@@ -36,7 +35,6 @@ int main()
                     even_len.push_back(m);
             }         
         }
-       
       }
       else{
         //cout<< "ODD LENGTH STRINGS" << endl;
@@ -60,24 +58,19 @@ int main()
            for(int i = 0;i< even_len.size() ; i++){
              cout<< even_len[i];
               }
-   reverse(even_len.begin() , even_len.end());
-
+       reverse(even_len.begin() , even_len.end());
           for(int i = 0;i< even_len.size() ; i++){
           cout<< even_len[i];
           }
       }
  else{
-       for(int i = 0;i< odd_len.size() ; i++){
+     for(int i = 0;i< odd_len.size() ; i++){
     cout<< odd_len[i];
    }
    reverse(odd_len.begin() , odd_len.end());
-
    for(int i = 1;i< odd_len.size() ; i++){
     cout<< odd_len[i];
    }
  }
-   
-
-
     return 0;
 }
